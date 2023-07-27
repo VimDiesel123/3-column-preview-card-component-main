@@ -155,6 +155,7 @@ h3 {
   background-color: var(--clr-neutral-100);
   padding: 1rem 2rem;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .vehicle--sedan .vehicle__learn-more {
@@ -167,4 +168,11 @@ h3 {
 
 .vehicle--luxury .vehicle__learn-more {
   color: var(--clr-primary-900);
+}
+
+.vehicle__learn-more:hover,
+.vehicle__learn-more:focus {
+  background-color: inherit;
+  outline: 1px solid var(--clr-neutral-100);
+  color: var(--clr-neutral-100);
 }
