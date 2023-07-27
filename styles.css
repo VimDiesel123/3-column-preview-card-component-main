@@ -108,7 +108,63 @@ main {
   display: grid;
 }
 
+h3 {
+  font-family: var(--ff-title);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fs-body);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
 .card {
   place-self: center center;
-  background-color: black;
+  display: grid;
+  grid-auto-flow: row;
+  margin: 5rem 1rem;
+}
+
+.vehicle {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.vehicle:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.vehicle:last-child {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.vehicle--sedan {
+  background-color: var(--clr-primary-300);
+}
+
+.vehicle--suv {
+  background-color: var(--clr-primary-700);
+}
+
+.vehicle--luxury {
+  background-color: var(--clr-primary-900);
+}
+
+.vehicle__learn-more {
+  background-color: var(--clr-neutral-100);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+
+.vehicle--sedan .vehicle__learn-more {
+  color: var(--clr-primary-300);
+}
+
+.vehicle--suv .vehicle__learn-more {
+  color: var(--clr-primary-700);
+}
+
+.vehicle--luxury .vehicle__learn-more {
+  color: var(--clr-primary-900);
 }
