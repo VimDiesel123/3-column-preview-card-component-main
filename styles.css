@@ -176,3 +176,26 @@ h3 {
   outline: 1px solid var(--clr-neutral-100);
   color: var(--clr-neutral-100);
 }
+
+@media screen and (min-width: 700px) {
+  .card {
+    grid-auto-flow: column;
+    max-width: 66%;
+  }
+
+  .vehicle p {
+    max-width: 25ch;
+  }
+
+  .vehicle:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .vehicle:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .vehicle__learn-more {
+    margin-top: 4rem;
+  }
+}
